@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: aliceblue;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+	text-align: center;
+	padding: 10px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	width: 50%;
+	margin: auto;
+	color: darkgoldenrod;
+}
+label{
+	padding: 10px;
+}
+
+input {
+	border-radius: 10px;
+	padding: 10px;
+	margin: 1px;
+}
+
+form button {
+	padding: 10px;
+	margin: 10px;
+	border-radius: 20px;
+	background: rgb(238, 156, 156);
+	cursor: pointer;
+	font-size: 20px;
+	font-family: monospace;
+
+}
+
+form button:hover{
+	background: rosybrown;
+}
+
+.notes-container {
+	width: 50%;
+	margin: auto;
+
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	justify-content: center;
+	align-items: center;
+}
+
+li {
+	background: white;
+	position: relative;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	box-shadow: 20px 20px 30px #ddd;
+	width: auto;
+	height: 170px auto;
+	padding: 10px;
+}
+
+li h6 {
+	margin: auto;
+	font-size: 20px;
+	padding:5px;
+	margin: auto;
+}
+
+li p {
+	margin: auto;
+	font-size: 15px;
+	padding: 20px;
+}
+li caption {
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: green;
+}
+
+@media screen and (max-width: 450px) {
+	li p {
+		font-size: 15px;
+		margin: auto;
+		padding: 5px;
+	}
+
+	li caption {
+		padding: 5px;
+		color: red;
+	}
+
+	.notes-container {
+	width: auto;
+	margin: auto;
+}
